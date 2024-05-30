@@ -55,6 +55,7 @@ function toggleContent(elem, icon) {
 					<li><a href="../../../families.html" title="Families">Families</a></li>
 					<li><a href="../../../updates.html" title="Updates">Updates</a></li>
 					<li><a href="../../../statistics.html" title="Statistics">Statistics</a></li>
+					<li><a href="../../../cal/2024/index.html" title="Web Calendar">Web Calendar</a></li>
 					<li><a onclick="history.go(-1);">Previous</a></li>
 					<li><a onclick="history.go(+1);">Next</a></li>
 				</ul>
@@ -111,78 +112,49 @@ function GoToTop() {
 						<td class="ColumnAttribute">Gender</td>
 						<td class="ColumnValue">female</td>
 					</tr>
+					<tr>
+						<td class="ColumnAttribute">Birth date</td>
+						<td class="ColumnValue">22 Dec 0</td>
+					</tr>
 				</table>
 			</div>
-			<div class="subsection" id="parents">
-				<h4 onclick="toggleContent('toggle_parent', 'icon_parent');">
-					<button class="icon" id="icon_parent">
+			<div class="subsection" id="events">
+				<h4 onclick="toggleContent('toggle_event', 'icon_event');">
+					<button class="icon" id="icon_event">
 						<svg class="triangle" viewBox="0 0 100 100">
 							<polygon points="5.9,88.2 50,11.8 94.1,88.2">
 							</polygon>
 						</svg>
 					</button>
-				Parents
+				Events
 				</h4>
-				<table class="infolist toggle_parent ltr" id="toggle_parent" style="display:none">
+				<table class="infolist eventlist toggle_event ltr" id="toggle_event" style="display:none">
 					<thead>
 						<tr>
-							<th class="ColumnAttribute">Relation to main person</th>
-							<th class="ColumnValue">Name</th>
-							<th class="ColumnValue">Birth date</th>
-							<th class="ColumnValue">Death date</th>
-							<th class="ColumnValue">Relation within this family (if not by birth)</th>
-						</tr>
+							<th class="ColumnEvent">Event</th>
+							<th class="ColumnDate">Date</th>
+							<th class="ColumnPlace">Place</th>
+							<th class="ColumnDescription">Description</th>
+							<th class="ColumnSources">Sources</th>
+							</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td class="ColumnAttribute">Father</td>
-							<td class="ColumnValue" /><a href="../../../ppl/9/c/f9be73d4ae37e0bf90b21d735c9.html">Haris Nasim</a><td class="ColumnDate" /><td class="ColumnDate" />
-						</tr>
-						<tr>
-							<td class="ColumnAttribute">Mother</td>
-							<td class="ColumnValue" /><a href="../../../ppl/e/9/f9c12b36ea860914f30eeced69e.html">Shama Nasim</a><td class="ColumnDate" /><td class="ColumnDate" />
-						</tr>
-						<tr>
-							<td class="ColumnAttribute">&nbsp;&nbsp;&nbsp;&nbsp;Brother</td>
-							<td class="ColumnValue">&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../ppl/7/8/f9be748a039171bc1c69f261e87.html">Faisal Harris</a></td>
-							<td class="ColumnDate"></td>
-							<td class="ColumnDate"></td>
-							<td class="ColumnValue"></td>
-						</tr>
-						<tr>
-							<td class="ColumnAttribute">&nbsp;&nbsp;&nbsp;&nbsp;Sister</td>
-							<td class="ColumnValue">&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../ppl/4/c/f9be75286284429ce846d244ac4.html">Fariha Harris</a></td>
-							<td class="ColumnDate"></td>
-							<td class="ColumnDate"></td>
-							<td class="ColumnValue"></td>
-						</tr>
-						<tr>
-							<td class="ColumnAttribute">&nbsp;&nbsp;&nbsp;&nbsp;Sister</td>
-							<td class="ColumnValue">&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../ppl/5/d/f9be75680e67e9af7850d473fd5.html">Sadia Harris</a></td>
-							<td class="ColumnDate"></td>
-							<td class="ColumnDate"></td>
-							<td class="ColumnValue"></td>
-						</tr>
-						<tr>
-							<td class="ColumnAttribute">&nbsp;&nbsp;&nbsp;&nbsp;Sister</td>
-							<td class="ColumnValue">&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../ppl/9/0/f9be74d4a6462b635379f609209.html">Shehla Harris</a></td>
-							<td class="ColumnDate"></td>
-							<td class="ColumnDate"></td>
-							<td class="ColumnValue"></td>
-						</tr>
-						<tr>
-							<td class="ColumnAttribute">&nbsp;&nbsp;&nbsp;&nbsp;Brother</td>
-							<td class="ColumnValue">&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../ppl/2/c/f9c12bfb9e44a40f3e5cc143bc2.html">Ajmal Harris</a></td>
-							<td class="ColumnDate"></td>
-							<td class="ColumnDate"></td>
-							<td class="ColumnValue"></td>
-						</tr>
-						<tr>
-							<td class="ColumnAttribute">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-							<td class="ColumnValue">&nbsp;&nbsp;&nbsp;&nbsp;<b>Naima Faisal</b></td>
-							<td class="ColumnDate"></td>
-							<td class="ColumnDate"></td>
-							<td class="ColumnValue"></td>
+							<td class="ColumnEvent" rowspan="2">
+							Birth
+							</td>
+							<td class="ColumnDate">22 Dec 0</td>
+							<td class="ColumnPlace">&nbsp;</td>
+							<td class="ColumnDescription">&nbsp;</td>
+							<td class="ColumnSources" rowspan="2">
+							&nbsp;
+							</td>
+							<tr>
+								<td class="ColumnNotes" colspan="3">
+									<div>
+									</div>
+								</td>
+							</tr>
 						</tr>
 					</tbody>
 				</table>
@@ -199,15 +171,15 @@ function GoToTop() {
 				</h4>
 				<table class="infolist" id="toggle_families" style="display:none">
 					<tr class="BeginFamily">
-						<td class="ColumnValue" colspan="3"><H4 class="subsection"><a href="../../../fam/3/5/f9c54bd9a3e311149825e704f53.html" title="Family of Faisal Harris and Naima Faisal">Family of Faisal Harris and Naima Faisal</a></H4></td>
+						<td class="ColumnValue" colspan="3"><H4 class="subsection"><a href="../../../fam/3/5/f9c54bd9a3e311149825e704f53.html" title="Family of Faisal Haris and Naima Faisal">Family of Faisal Haris and Naima Faisal</a></H4></td>
 					</tr>
 					<tr class="BeginFamily">
 						<td class="ColumnType">Married</td>
 						<td class="ColumnAttribute">Husband</td>
 						<td class="ColumnValue">
-							<a href="../../../ppl/7/8/f9be748a039171bc1c69f261e87.html">Faisal Harris</a>
+							<a href="../../../ppl/7/8/f9be748a039171bc1c69f261e87.html">Faisal Haris</a>
 						 ( * 
-						
+						4 Dec 1968
 						 + 
 						...
 						 )
@@ -228,7 +200,7 @@ function GoToTop() {
 								<tr><td /><a href="../../../ppl/3/b/f9c54ab3bf4d914fc4447adbb3.html">Nabiha Faisal</a><td></td><td></td></tr>
 								<tr><td /><a href="../../../ppl/4/5/f9c54b480e4788dd6fb09f87954.html">Nabeera Faisal</a><td></td><td></td></tr>
 								<tr><td /><a href="../../../ppl/6/0/f9c54af92b9489aa12025b36f06.html">Nuwaira Faisal</a><td></td><td></td></tr>
-								<tr><td /><a href="../../../ppl/1/f/f9c54b9d8c74c3fd1763a5a40f1.html">Hasan Harris</a><td></td><td></td></tr>
+								<tr><td /><a href="../../../ppl/1/f/f9c54b9d8c74c3fd1763a5a40f1.html">Hasan Haris</a><td></td><td></td></tr>
 							</tbody>
 						</table>
 					</tr>
@@ -275,45 +247,24 @@ function GoToTop() {
 				</h4>
 				<ol class="pedigreegen" id="toggle_pedigree" style="display:none">
 					<li>
-						<a href="../../../ppl/9/c/f9be73d4ae37e0bf90b21d735c9.html">Haris Nasim</a>
 						<ol>
-							<li class="spouse">
-								<a href="../../../ppl/e/9/f9c12b36ea860914f30eeced69e.html">Shama Nasim</a>
-								<ol>
-									<li>
-										<a href="../../../ppl/7/8/f9be748a039171bc1c69f261e87.html">Faisal Harris</a>
-									</li>
-									<li>
-										<a href="../../../ppl/4/c/f9be75286284429ce846d244ac4.html">Fariha Harris</a>
-									</li>
-									<li>
-										<a href="../../../ppl/5/d/f9be75680e67e9af7850d473fd5.html">Sadia Harris</a>
-									</li>
-									<li>
-										<a href="../../../ppl/9/0/f9be74d4a6462b635379f609209.html">Shehla Harris</a>
-									</li>
-									<li>
-										<a href="../../../ppl/2/c/f9c12bfb9e44a40f3e5cc143bc2.html">Ajmal Harris</a>
-									</li>
-									<li class="thisperson">
-									Naima Faisal
-										<ol class="spouselist">
-											<li class="spouse">
-												<a href="../../../ppl/7/8/f9be748a039171bc1c69f261e87.html">Faisal Harris</a>
-												<ol>
-													<li>
-														<a href="../../../ppl/3/b/f9c54ab3bf4d914fc4447adbb3.html">Nabiha Faisal</a>
-													</li>
-													<li>
-														<a href="../../../ppl/4/5/f9c54b480e4788dd6fb09f87954.html">Nabeera Faisal</a>
-													</li>
-													<li>
-														<a href="../../../ppl/6/0/f9c54af92b9489aa12025b36f06.html">Nuwaira Faisal</a>
-													</li>
-													<li>
-														<a href="../../../ppl/1/f/f9c54b9d8c74c3fd1763a5a40f1.html">Hasan Harris</a>
-													</li>
-												</ol>
+							<li class="thisperson">
+							Naima Faisal
+								<ol class="spouselist">
+									<li class="spouse">
+										<a href="../../../ppl/7/8/f9be748a039171bc1c69f261e87.html">Faisal Haris</a>
+										<ol>
+											<li>
+												<a href="../../../ppl/3/b/f9c54ab3bf4d914fc4447adbb3.html">Nabiha Faisal</a>
+											</li>
+											<li>
+												<a href="../../../ppl/4/5/f9c54b480e4788dd6fb09f87954.html">Nabeera Faisal</a>
+											</li>
+											<li>
+												<a href="../../../ppl/6/0/f9c54af92b9489aa12025b36f06.html">Nuwaira Faisal</a>
+											</li>
+											<li>
+												<a href="../../../ppl/1/f/f9c54b9d8c74c3fd1763a5a40f1.html">Hasan Haris</a>
 											</li>
 										</ol>
 									</li>
@@ -323,97 +274,11 @@ function GoToTop() {
 					</li>
 				</ol>
 			</div>
-			<div class="subsection" id="tree">
-				<h4 onclick="toggleContent('toggle_anc', 'icon_anc');">
-					<button class="icon" id="icon_anc">
-						<svg class="triangle" viewBox="0 0 100 100">
-							<polygon points="5.9,88.2 50,11.8 94.1,88.2">
-							</polygon>
-						</svg>
-					</button>
-				Ancestors
-				</h4>
-				<div class="tree" id="toggle_anc" style="display:none">
-					<div id="treeContainer" style="width:1244px; height:375px; top: 0px">
-						<div class="boxbg female AncCol0" style="top: 155px; left: 6px;">
-							<a class="noThumb" href="../../../ppl/b/3/f9c54988a2aa882a393af14e3b.html">
-							Naima Faisal<br>*<br>+...
-							</a>
-						</div>
-						<div class="shadow" style="top: 160px; left: 10px;"></div>
-						<div class="bvline" style="top: 175px; left: 285px; width: 15px"></div>
-						<div class="gvline" style="top: 180px; left: 285px; width: 20px"></div>
-						<div class="boxbg male AncCol1" style="top: 80px; left: 316px;">
-							<a class="noThumb" href="../../../ppl/9/c/f9be73d4ae37e0bf90b21d735c9.html">
-							Haris Nasim<br>*<br>+...
-							</a>
-						</div>
-						<div class="shadow" style="top: 85px; left: 320px;"></div>
-						<div class="bvline" style="top: 100px; left: 300px; width: 15px;"></div>
-					
-						<div class="bhline" style="top: 100px; left: 300px; height: 76px;"></div>
-					
-						<div class="bvline" style="top: 100px; left: 595px; width: 15px"></div>
-						<div class="gvline" style="top: 105px; left: 595px; width: 20px"></div>
-						<div class="boxbg male AncCol2" style="top: 5px; left: 626px;">
-							<a class="thumbnail" href="../../../ppl/0/2/f9be73620aa19733f35acbe7b20.html">
-								<table class="table">
-									<tr>
-										<td class="img">
-											<img alt="Img: Syed Muhammad Nasim" src="../../../thumb/e/c/f9ca7582274ad0e0461efbe8ce.png" />
-										</td>
-										<td class="name">
-										Syed Muhammad Nasim<br>*<br>+...
-										</td>
-									</tr>
-								</table>
-							</a>
-						</div>
-						<div class="shadow" style="top: 10px; left: 630px;"></div>
-						<div class="bvline" style="top: 25px; left: 610px; width: 15px;"></div>
-					
-						<div class="bhline" style="top: 25px; left: 610px; height: 76px;"></div>
-					
-						<div class="bvline" style="top: 25px; left: 905px; width: 15px"></div>
-						<div class="gvline" style="top: 30px; left: 905px; width: 20px"></div>
-						<div class="boxbg male AncCol3" style="top: 5px; left: 936px;">
-							<a class="noThumb" href="../../../ppl/0/b/f9c1429475b5a8cd67c267b9bb0.html">
-							Sheikh Abdul Aziz<br>*<br>+...
-							</a>
-						</div>
-						<div class="shadow" style="top: 10px; left: 940px;"></div>
-						<div class="bvline" style="top: 25px; left: 920px; width: 15px;"></div>
-					
-						<div class="bhline" style="top: 25px; left: 920px; height: 1px;"></div>
-					
-						<div class="boxbg female AncCol2" style="top: 155px; left: 626px;">
-							<a class="noThumb" href="../../../ppl/3/b/f9bd70078069932ca7a580a9b3.html">
-							Masooda Khatoon<br>*<br>+...
-							</a>
-						</div>
-						<div class="shadow" style="top: 160px; left: 630px;"></div>
-						<div class="bvline" style="top: 175px; left: 610px; width: 15px;"></div>
-					
-						<div class="bhline" style="top: 100px; left: 610px; height: 76px;"></div>
-					
-						<div class="boxbg female AncCol1" style="top: 230px; left: 316px;">
-							<a class="noThumb" href="../../../ppl/e/9/f9c12b36ea860914f30eeced69e.html">
-							Shama Nasim<br>*<br>+...
-							</a>
-						</div>
-						<div class="shadow" style="top: 235px; left: 320px;"></div>
-						<div class="bvline" style="top: 250px; left: 300px; width: 15px;"></div>
-					
-						<div class="bhline" style="top: 175px; left: 300px; height: 76px;"></div>
-					
-					</div>
-				</div>
-			</div>
 		</div>
 		<div class="fullclear"></div>
 		<div id="footer">
 			<p id="createdate">
-			Generated by <a href="http://gramps-project.org/">Gramps</a> 5.2.2<br />Last change was the 2024-05-22 22:04:18
+			Generated by <a href="http://gramps-project.org/">Gramps</a> 5.2.2<br />Last change was the 2024-05-29 10:06:21
 			</p>
 			<p id="copyright">
 			

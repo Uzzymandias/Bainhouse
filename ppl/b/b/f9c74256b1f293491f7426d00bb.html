@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xml:lang="en-GB" lang="en-GB" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
 <head dir="ltr" lang="en-GB">
-	<title>My Family Tree - Faisal Ahmad</title>
+	<title>My Family Tree - Syed Faisal Ahmad</title>
 	<meta charset="UTF-8" />
 	<meta name ="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=0.5, maximum-scale=10.0, user-scalable=yes" />
 	<meta name ="apple-mobile-web-app-capable" content="yes" />
@@ -39,6 +39,8 @@ function toggleContent(elem, icon) {
 }
 </script>
 
+	<link href="../../../css/lightbox.css" media="screen" rel="stylesheet" type="text/css" />
+	<script src="../../../css/lightbox.js" type="text/javascript"></script>
 </head>
 <body dir="ltr">
 	<div id="outerwrapper">
@@ -55,6 +57,7 @@ function toggleContent(elem, icon) {
 					<li><a href="../../../families.html" title="Families">Families</a></li>
 					<li><a href="../../../updates.html" title="Updates">Updates</a></li>
 					<li><a href="../../../statistics.html" title="Statistics">Statistics</a></li>
+					<li><a href="../../../cal/2024/index.html" title="Web Calendar">Web Calendar</a></li>
 					<li><a onclick="history.go(-1);">Previous</a></li>
 					<li><a onclick="history.go(+1);">Next</a></li>
 				</ul>
@@ -92,19 +95,71 @@ function GoToTop() {
 </script>
 
 		<div class="content" id="IndividualDetail">
-			<h3>Faisal Ahmad<sup><small></small></sup></h3>
+			<div class="snapshot">
+				<div class="thumbnail">
+					<a href="../../../img/9/4/f9dd8a5210488258f71736a349.html" title="IMG_1673">
+						<img alt="IMG_1673" src="../../../thumb/9/4/f9dd8a5210488258f71736a349.png" />
+					</a>
+				</div>
+			</div>
+			<h3>Syed Faisal Ahmad<sup><small></small></sup></h3>
 			<div id="summaryarea">
 				<table class="infolist">
 					<tr>
 						<td class="ColumnAttribute">Birth Name</td>
 						<td class="ColumnValue">
-						Faisal Ahmad
+						Syed Faisal Ahmad
 						</td>
 					</tr>
 					<tr>
 						<td class="ColumnAttribute">Gender</td>
 						<td class="ColumnValue">male</td>
 					</tr>
+					<tr>
+						<td class="ColumnAttribute">Birth date</td>
+						<td class="ColumnValue">24 Jun 0</td>
+					</tr>
+				</table>
+			</div>
+			<div class="subsection" id="events">
+				<h4 onclick="toggleContent('toggle_event', 'icon_event');">
+					<button class="icon" id="icon_event">
+						<svg class="triangle" viewBox="0 0 100 100">
+							<polygon points="5.9,88.2 50,11.8 94.1,88.2">
+							</polygon>
+						</svg>
+					</button>
+				Events
+				</h4>
+				<table class="infolist eventlist toggle_event ltr" id="toggle_event" style="display:none">
+					<thead>
+						<tr>
+							<th class="ColumnEvent">Event</th>
+							<th class="ColumnDate">Date</th>
+							<th class="ColumnPlace">Place</th>
+							<th class="ColumnDescription">Description</th>
+							<th class="ColumnSources">Sources</th>
+							</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="ColumnEvent" rowspan="2">
+							Birth
+							</td>
+							<td class="ColumnDate">24 Jun 0</td>
+							<td class="ColumnPlace">&nbsp;</td>
+							<td class="ColumnDescription">&nbsp;</td>
+							<td class="ColumnSources" rowspan="2">
+							&nbsp;
+							</td>
+							<tr>
+								<td class="ColumnNotes" colspan="3">
+									<div>
+									</div>
+								</td>
+							</tr>
+						</tr>
+					</tbody>
 				</table>
 			</div>
 			<div class="subsection" id="parents">
@@ -134,19 +189,19 @@ function GoToTop() {
 						</tr>
 						<tr>
 							<td class="ColumnAttribute">Mother</td>
-							<td class="ColumnValue" /><a href="../../../ppl/0/3/f9c7422c08456c024593f903d30.html">Roohi Ahmad</a><td class="ColumnDate" /><td class="ColumnDate" />
+							<td class="ColumnValue" /><a href="../../../ppl/0/3/f9c7422c08456c024593f903d30.html">Roohi Ibrar Sharaf</a><td class="ColumnDate" /><td class="ColumnDate" />
 						</tr>
 						<tr>
 							<td class="ColumnAttribute">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-							<td class="ColumnValue">&nbsp;&nbsp;&nbsp;&nbsp;<b>Faisal Ahmad</b></td>
-							<td class="ColumnDate"></td>
+							<td class="ColumnValue">&nbsp;&nbsp;&nbsp;&nbsp;<b>Syed Faisal Ahmad</b></td>
+							<td class="ColumnDate">24 Jun 0</td>
 							<td class="ColumnDate"></td>
 							<td class="ColumnValue"></td>
 						</tr>
 						<tr>
 							<td class="ColumnAttribute">&nbsp;&nbsp;&nbsp;&nbsp;Sister</td>
 							<td class="ColumnValue">&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../ppl/d/0/f9c74275bca46050b9745bbff0d.html">Zainab Ahmad</a></td>
-							<td class="ColumnDate"></td>
+							<td class="ColumnDate">11 Feb 0</td>
 							<td class="ColumnDate"></td>
 							<td class="ColumnValue"></td>
 						</tr>
@@ -159,6 +214,46 @@ function GoToTop() {
 						</tr>
 					</tbody>
 				</table>
+			</div>
+			<div class="subsection" id="indivgallery">
+				<h4 onclick="toggleContent('toggle_media', 'icon_media');">
+					<button class="icon" id="icon_media">
+						<svg class="triangle" viewBox="0 0 100 100">
+							<polygon points="5.9,88.2 50,11.8 94.1,88.2">
+							</polygon>
+						</svg>
+					</button>
+				Media
+				</h4>
+				<div id="toggle_media" style="display:none">
+					<div class="MediaRow">
+						<div class="MediaColumn ltr">
+							<img class="hover-shadow" onclick="openModal();currentSlide(1)" src="../../../thumb/9/4/f9dd8a5210488258f71736a349.png" />
+						</div>
+					</div>
+					<div class="ModalClass" id="MediaModal">
+						<span class="MediaClose MediaCursor" onclick="closeModal()">&times;</span>
+						<div class="ModalContent">
+							<a class="MediaPrev" onclick="plusSlides(-1)">
+							&#10094;
+							</a>
+							<a class="MediaNext" onclick="plusSlides(1)">
+							&#10095;
+							</a>
+							<div class="MediaSlide">
+								<div class="MediaNumber">
+								1/1 - IMG_1673
+								</div>
+								<a href="../../../img/9/4/f9dd8a5210488258f71736a349.html">
+									<img src="../../../images/9/4/f9dd8a5210488258f71736a349.jpg" style="width:100%" />
+								</a>
+							</div>
+						</div>
+					</div>
+					<div id="medias">
+					</div>
+				</div>
+				<div class="fullclear"></div>
 			</div>
 			<div class="subsection" id="pedigree">
 				<h4 onclick="toggleContent('toggle_pedigree', 'icon_pedigree');">
@@ -175,10 +270,10 @@ function GoToTop() {
 						<a href="../../../ppl/0/b/f9c73f553bd537eb33ceb0bfdb0.html">Sharaf Ahmad</a>
 						<ol>
 							<li class="spouse">
-								<a href="../../../ppl/0/3/f9c7422c08456c024593f903d30.html">Roohi Ahmad</a>
+								<a href="../../../ppl/0/3/f9c7422c08456c024593f903d30.html">Roohi Ibrar Sharaf</a>
 								<ol>
 									<li class="thisperson">
-									Faisal Ahmad
+									Syed Faisal Ahmad
 									</li>
 									<li>
 										<a href="../../../ppl/d/0/f9c74275bca46050b9745bbff0d.html">Zainab Ahmad</a>
@@ -205,8 +300,17 @@ function GoToTop() {
 				<div class="tree" id="toggle_anc" style="display:none">
 					<div id="treeContainer" style="width:1244px; height:300px; top: 0px">
 						<div class="boxbg male AncCol0" style="top: 80px; left: 6px;">
-							<a class="noThumb" href="../../../ppl/b/b/f9c74256b1f293491f7426d00bb.html">
-							Faisal Ahmad<br>*<br>+...
+							<a class="thumbnail" href="../../../ppl/b/b/f9c74256b1f293491f7426d00bb.html">
+								<table class="table">
+									<tr>
+										<td class="img">
+											<img alt="Img: Syed Faisal Ahmad" src="../../../thumb/9/4/f9dd8a5210488258f71736a349.png" />
+										</td>
+										<td class="name">
+										Syed Faisal Ahmad<br>*24 Jun 0<br>+...
+										</td>
+									</tr>
+								</table>
 							</a>
 						</div>
 						<div class="shadow" style="top: 85px; left: 10px;"></div>
@@ -248,7 +352,7 @@ function GoToTop() {
 					
 						<div class="boxbg female AncCol1" style="top: 155px; left: 316px;">
 							<a class="noThumb" href="../../../ppl/0/3/f9c7422c08456c024593f903d30.html">
-							Roohi Ahmad<br>*<br>+...
+							Roohi Ibrar Sharaf<br>*<br>+...
 							</a>
 						</div>
 						<div class="shadow" style="top: 160px; left: 320px;"></div>
@@ -263,7 +367,7 @@ function GoToTop() {
 		<div class="fullclear"></div>
 		<div id="footer">
 			<p id="createdate">
-			Generated by <a href="http://gramps-project.org/">Gramps</a> 5.2.2<br />Last change was the 2024-05-23 12:30:36
+			Generated by <a href="http://gramps-project.org/">Gramps</a> 5.2.2<br />Last change was the 2024-05-30 10:39:02
 			</p>
 			<p id="copyright">
 			

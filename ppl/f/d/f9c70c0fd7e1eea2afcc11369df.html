@@ -39,6 +39,8 @@ function toggleContent(elem, icon) {
 }
 </script>
 
+	<link href="../../../css/lightbox.css" media="screen" rel="stylesheet" type="text/css" />
+	<script src="../../../css/lightbox.js" type="text/javascript"></script>
 </head>
 <body dir="ltr">
 	<div id="outerwrapper">
@@ -55,6 +57,7 @@ function toggleContent(elem, icon) {
 					<li><a href="../../../families.html" title="Families">Families</a></li>
 					<li><a href="../../../updates.html" title="Updates">Updates</a></li>
 					<li><a href="../../../statistics.html" title="Statistics">Statistics</a></li>
+					<li><a href="../../../cal/2024/index.html" title="Web Calendar">Web Calendar</a></li>
 					<li><a onclick="history.go(-1);">Previous</a></li>
 					<li><a onclick="history.go(+1);">Next</a></li>
 				</ul>
@@ -92,6 +95,13 @@ function GoToTop() {
 </script>
 
 		<div class="content" id="IndividualDetail">
+			<div class="snapshot">
+				<div class="thumbnail">
+					<a href="../../../img/3/d/f9d7bda2c611c688c980646fed3.html" title="IMG_1619">
+						<img alt="IMG_1619" src="../../../thumb/3/d/f9d7bda2c611c688c980646fed347,40-76,74.png" />
+					</a>
+				</div>
+			</div>
 			<h3>Wanees Hannan<sup><small></small></sup></h3>
 			<div id="summaryarea">
 				<table class="infolist">
@@ -105,6 +115,51 @@ function GoToTop() {
 						<td class="ColumnAttribute">Gender</td>
 						<td class="ColumnValue">male</td>
 					</tr>
+					<tr>
+						<td class="ColumnAttribute">Birth date</td>
+						<td class="ColumnValue">31 Jan 0</td>
+					</tr>
+				</table>
+			</div>
+			<div class="subsection" id="events">
+				<h4 onclick="toggleContent('toggle_event', 'icon_event');">
+					<button class="icon" id="icon_event">
+						<svg class="triangle" viewBox="0 0 100 100">
+							<polygon points="5.9,88.2 50,11.8 94.1,88.2">
+							</polygon>
+						</svg>
+					</button>
+				Events
+				</h4>
+				<table class="infolist eventlist toggle_event ltr" id="toggle_event" style="display:none">
+					<thead>
+						<tr>
+							<th class="ColumnEvent">Event</th>
+							<th class="ColumnDate">Date</th>
+							<th class="ColumnPlace">Place</th>
+							<th class="ColumnDescription">Description</th>
+							<th class="ColumnSources">Sources</th>
+							</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="ColumnEvent" rowspan="2">
+							Birth
+							</td>
+							<td class="ColumnDate">31 Jan 0</td>
+							<td class="ColumnPlace">&nbsp;</td>
+							<td class="ColumnDescription">&nbsp;</td>
+							<td class="ColumnSources" rowspan="2">
+							&nbsp;
+							</td>
+							<tr>
+								<td class="ColumnNotes" colspan="3">
+									<div>
+									</div>
+								</td>
+							</tr>
+						</tr>
+					</tbody>
 				</table>
 			</div>
 			<div class="subsection" id="parents">
@@ -139,26 +194,66 @@ function GoToTop() {
 						<tr>
 							<td class="ColumnAttribute">&nbsp;&nbsp;&nbsp;&nbsp;Sister</td>
 							<td class="ColumnValue">&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../ppl/d/9/f9c70bdc44e390d271ce98c5a9d.html">Jaserah Hannan</a></td>
-							<td class="ColumnDate"></td>
+							<td class="ColumnDate">19 Dec 1997</td>
 							<td class="ColumnDate"></td>
 							<td class="ColumnValue"></td>
 						</tr>
 						<tr>
 							<td class="ColumnAttribute">&nbsp;&nbsp;&nbsp;&nbsp;</td>
 							<td class="ColumnValue">&nbsp;&nbsp;&nbsp;&nbsp;<b>Wanees Hannan</b></td>
-							<td class="ColumnDate"></td>
+							<td class="ColumnDate">31 Jan 0</td>
 							<td class="ColumnDate"></td>
 							<td class="ColumnValue"></td>
 						</tr>
 						<tr>
 							<td class="ColumnAttribute">&nbsp;&nbsp;&nbsp;&nbsp;Sister</td>
 							<td class="ColumnValue">&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../ppl/f/3/f9c70c74b256807a9ad6e87e03f.html">Deena Hannan</a></td>
-							<td class="ColumnDate"></td>
+							<td class="ColumnDate">20 Feb 2010</td>
 							<td class="ColumnDate"></td>
 							<td class="ColumnValue"></td>
 						</tr>
 					</tbody>
 				</table>
+			</div>
+			<div class="subsection" id="indivgallery">
+				<h4 onclick="toggleContent('toggle_media', 'icon_media');">
+					<button class="icon" id="icon_media">
+						<svg class="triangle" viewBox="0 0 100 100">
+							<polygon points="5.9,88.2 50,11.8 94.1,88.2">
+							</polygon>
+						</svg>
+					</button>
+				Media
+				</h4>
+				<div id="toggle_media" style="display:none">
+					<div class="MediaRow">
+						<div class="MediaColumn ltr">
+							<img class="hover-shadow" onclick="openModal();currentSlide(1)" src="../../../thumb/3/d/f9d7bda2c611c688c980646fed3.png" />
+						</div>
+					</div>
+					<div class="ModalClass" id="MediaModal">
+						<span class="MediaClose MediaCursor" onclick="closeModal()">&times;</span>
+						<div class="ModalContent">
+							<a class="MediaPrev" onclick="plusSlides(-1)">
+							&#10094;
+							</a>
+							<a class="MediaNext" onclick="plusSlides(1)">
+							&#10095;
+							</a>
+							<div class="MediaSlide">
+								<div class="MediaNumber">
+								1/1 - IMG_1619
+								</div>
+								<a href="../../../img/3/d/f9d7bda2c611c688c980646fed3.html">
+									<img src="../../../images/3/d/f9d7bda2c611c688c980646fed3.jpg" style="width:100%" />
+								</a>
+							</div>
+						</div>
+					</div>
+					<div id="medias">
+					</div>
+				</div>
+				<div class="fullclear"></div>
 			</div>
 			<div class="subsection" id="pedigree">
 				<h4 onclick="toggleContent('toggle_pedigree', 'icon_pedigree');">
@@ -205,16 +300,34 @@ function GoToTop() {
 				<div class="tree" id="toggle_anc" style="display:none">
 					<div id="treeContainer" style="width:1554px; height:450px; top: 0px">
 						<div class="boxbg male AncCol0" style="top: 80px; left: 6px;">
-							<a class="noThumb" href="../../../ppl/f/d/f9c70c0fd7e1eea2afcc11369df.html">
-							Wanees Hannan<br>*<br>+...
+							<a class="thumbnail" href="../../../ppl/f/d/f9c70c0fd7e1eea2afcc11369df.html">
+								<table class="table">
+									<tr>
+										<td class="img">
+											<img alt="Img: Wanees Hannan" src="../../../thumb/3/d/f9d7bda2c611c688c980646fed347,40-76,74.png" />
+										</td>
+										<td class="name">
+										Wanees Hannan<br>*31 Jan 0<br>+...
+										</td>
+									</tr>
+								</table>
 							</a>
 						</div>
 						<div class="shadow" style="top: 85px; left: 10px;"></div>
 						<div class="bvline" style="top: 100px; left: 285px; width: 15px"></div>
 						<div class="gvline" style="top: 105px; left: 285px; width: 20px"></div>
 						<div class="boxbg male AncCol1" style="top: 5px; left: 316px;">
-							<a class="noThumb" href="../../../ppl/3/b/f9c70a694d428cb4a38dea85b3.html">
-							Nael Hannan<br>*<br>+...
+							<a class="thumbnail" href="../../../ppl/3/b/f9c70a694d428cb4a38dea85b3.html">
+								<table class="table">
+									<tr>
+										<td class="img">
+											<img alt="Img: Nael Hannan" src="../../../thumb/6/f/f9d7be6c8b41b1a20636ed62f6.png" />
+										</td>
+										<td class="name">
+										Nael Hannan<br>*<br>+...
+										</td>
+									</tr>
+								</table>
 							</a>
 						</div>
 						<div class="shadow" style="top: 10px; left: 320px;"></div>
@@ -313,7 +426,7 @@ function GoToTop() {
 		<div class="fullclear"></div>
 		<div id="footer">
 			<p id="createdate">
-			Generated by <a href="http://gramps-project.org/">Gramps</a> 5.2.2<br />Last change was the 2024-05-23 10:56:16
+			Generated by <a href="http://gramps-project.org/">Gramps</a> 5.2.2<br />Last change was the 2024-05-28 15:23:39
 			</p>
 			<p id="copyright">
 			
