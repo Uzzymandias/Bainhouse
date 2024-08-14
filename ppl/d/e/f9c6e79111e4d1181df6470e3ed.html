@@ -39,6 +39,8 @@ function toggleContent(elem, icon) {
 }
 </script>
 
+	<link href="../../../css/lightbox.css" media="screen" rel="stylesheet" type="text/css" />
+	<script src="../../../css/lightbox.js" type="text/javascript"></script>
 </head>
 <body dir="ltr">
 	<div id="outerwrapper">
@@ -54,6 +56,7 @@ function toggleContent(elem, icon) {
 					<li><a href="../../../surnames.html" title="Surnames">Surnames</a></li>
 					<li><a href="../../../families.html" title="Families">Families</a></li>
 					<li><a href="../../../media.html" title="Media">Media</a></li>
+					<li><a href="../../../contact.html" title="Contact">Contact</a></li>
 					<li><a href="../../../updates.html" title="Updates">Updates</a></li>
 					<li><a href="../../../statistics.html" title="Statistics">Statistics</a></li>
 					<li><a href="../../../cal/2024/index.html" title="Web Calendar">Web Calendar</a></li>
@@ -94,6 +97,13 @@ function GoToTop() {
 </script>
 
 		<div class="content" id="IndividualDetail">
+			<div class="snapshot">
+				<div class="thumbnail">
+					<a href="../../../img/2/e/fac2e82f16c6808604e6bfa74e2.html" title="Tanzil Manawar">
+						<img alt="Tanzil Manawar" src="../../../thumb/2/e/fac2e82f16c6808604e6bfa74e2.png" />
+					</a>
+				</div>
+			</div>
 			<h3>Tanzil Manawar<sup><small></small></sup></h3>
 			<div id="summaryarea">
 				<table class="infolist">
@@ -136,7 +146,7 @@ function GoToTop() {
 						</tr>
 						<tr>
 							<td class="ColumnAttribute">Mother</td>
-							<td class="ColumnValue" /><a href="../../../ppl/1/e/f9c14f0e04e70771b43f81d91e1.html">Mushira Saleem</a><td class="ColumnDate" /><td class="ColumnDate" />
+							<td class="ColumnValue" /><a href="../../../ppl/1/e/f9c14f0e04e70771b43f81d91e1.html">Mushira Manawar</a><td class="ColumnDate" /><td class="ColumnDate" />
 						</tr>
 						<tr>
 							<td class="ColumnAttribute">&nbsp;&nbsp;&nbsp;&nbsp;Sister</td>
@@ -155,6 +165,92 @@ function GoToTop() {
 					</tbody>
 				</table>
 			</div>
+			<div class="subsection" id="families">
+				<h4 onclick="toggleContent('toggle_families', 'icon_families');">
+					<button class="icon" id="icon_families">
+						<svg class="triangle" viewBox="0 0 100 100">
+							<polygon points="5.9,88.2 50,11.8 94.1,88.2">
+							</polygon>
+						</svg>
+					</button>
+				Families
+				</h4>
+				<table class="infolist" id="toggle_families" style="display:none">
+					<tr class="BeginFamily">
+						<td class="ColumnValue" colspan="3"><H4 class="subsection"><a href="../../../fam/2/6/faa2079d28c40aae10de8cbb762.html" title="Family of Tanzil Manawar and Anum Hanif">Family of Tanzil Manawar and Anum Hanif</a></H4></td>
+					</tr>
+					<tr class="BeginFamily">
+						<td class="ColumnType">Married</td>
+						<td class="ColumnAttribute">Wife</td>
+						<td class="ColumnValue">
+							<a href="../../../ppl/c/f/faa207c1cb33e814ef477b09bfc.html">Anum Hanif</a>
+						 ( * 
+						
+						 + 
+						...
+						 )
+						</td>
+					</tr>
+					<tr>
+						<td class="ColumnAttribute">Children</td>
+						<td class="ColumnValue Child" colspan="2" />
+						<table class="infolist eventlist ltr">
+							<thead>
+								<tr>
+									<th class="ColumnName">Name</th>
+									<th class="ColumnDate">Birth Date</th>
+									<th class="ColumnDate">Death Date</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td /><a href="../../../ppl/e/9/fabedef6f952170abbcb588509e.html">Asiya Manawar</a><td></td><td></td></tr>
+								<tr><td /><a href="../../../ppl/e/e/fabedf6b2404c77ff2aa04f04ee.html">Amena Manawar</a><td></td><td></td></tr>
+								<tr><td /><a href="../../../ppl/0/d/fabedf97fb91143fb535b4f28d0.html">Uthman Manawar</a><td></td><td></td></tr>
+							</tbody>
+						</table>
+					</tr>
+				</table>
+			</div>
+			<div class="subsection" id="indivgallery">
+				<h4 onclick="toggleContent('toggle_media', 'icon_media');">
+					<button class="icon" id="icon_media">
+						<svg class="triangle" viewBox="0 0 100 100">
+							<polygon points="5.9,88.2 50,11.8 94.1,88.2">
+							</polygon>
+						</svg>
+					</button>
+				Media
+				</h4>
+				<div id="toggle_media" style="display:none">
+					<div class="MediaRow">
+						<div class="MediaColumn ltr">
+							<img class="hover-shadow" onclick="openModal();currentSlide(1)" src="../../../thumb/2/e/fac2e82f16c6808604e6bfa74e2.png" />
+						</div>
+					</div>
+					<div class="ModalClass" id="MediaModal">
+						<span class="MediaClose MediaCursor" onclick="closeModal()">&times;</span>
+						<div class="ModalContent">
+							<a class="MediaPrev" onclick="plusSlides(-1)">
+							&#10094;
+							</a>
+							<a class="MediaNext" onclick="plusSlides(1)">
+							&#10095;
+							</a>
+							<div class="MediaSlide">
+								<div class="MediaNumber">
+								1/1 - Tanzil Manawar
+								</div>
+								<a href="../../../img/2/e/fac2e82f16c6808604e6bfa74e2.html">
+									<img src="../../../images/2/e/fac2e82f16c6808604e6bfa74e2.jpg" style="width:100%" />
+								</a>
+							</div>
+						</div>
+					</div>
+					<div id="medias">
+					</div>
+				</div>
+				<div class="fullclear"></div>
+			</div>
 			<div class="subsection" id="pedigree">
 				<h4 onclick="toggleContent('toggle_pedigree', 'icon_pedigree');">
 					<button class="icon" id="icon_pedigree">
@@ -170,13 +266,29 @@ function GoToTop() {
 						<a href="../../../ppl/f/8/f9c6e6bb7b214fb7d91fd58f78f.html">Syed A Manawar</a>
 						<ol>
 							<li class="spouse">
-								<a href="../../../ppl/1/e/f9c14f0e04e70771b43f81d91e1.html">Mushira Saleem</a>
+								<a href="../../../ppl/1/e/f9c14f0e04e70771b43f81d91e1.html">Mushira Manawar</a>
 								<ol>
 									<li>
 										<a href="../../../ppl/3/6/f9c6e762cb16dbf7d782e88e063.html">Sana Manawar</a>
 									</li>
 									<li class="thisperson">
 									Tanzil Manawar
+										<ol class="spouselist">
+											<li class="spouse">
+												<a href="../../../ppl/c/f/faa207c1cb33e814ef477b09bfc.html">Anum Hanif</a>
+												<ol>
+													<li>
+														<a href="../../../ppl/e/9/fabedef6f952170abbcb588509e.html">Asiya Manawar</a>
+													</li>
+													<li>
+														<a href="../../../ppl/e/e/fabedf6b2404c77ff2aa04f04ee.html">Amena Manawar</a>
+													</li>
+													<li>
+														<a href="../../../ppl/0/d/fabedf97fb91143fb535b4f28d0.html">Uthman Manawar</a>
+													</li>
+												</ol>
+											</li>
+										</ol>
 									</li>
 								</ol>
 							</li>
@@ -197,8 +309,17 @@ function GoToTop() {
 				<div class="tree" id="toggle_anc" style="display:none">
 					<div id="treeContainer" style="width:1244px; height:375px; top: 0px">
 						<div class="boxbg male AncCol0" style="top: 80px; left: 6px;">
-							<a class="noThumb" href="../../../ppl/d/e/f9c6e79111e4d1181df6470e3ed.html">
-							Tanzil Manawar<br>*<br>+...
+							<a class="thumbnail" href="../../../ppl/d/e/f9c6e79111e4d1181df6470e3ed.html">
+								<table class="table">
+									<tr>
+										<td class="img">
+											<img alt="Img: Tanzil Manawar" src="../../../thumb/2/e/fac2e82f16c6808604e6bfa74e2.png" />
+										</td>
+										<td class="name">
+										Tanzil Manawar<br>*<br>+...
+										</td>
+									</tr>
+								</table>
 							</a>
 						</div>
 						<div class="shadow" style="top: 85px; left: 10px;"></div>
@@ -225,7 +346,7 @@ function GoToTop() {
 					
 						<div class="boxbg female AncCol1" style="top: 155px; left: 316px;">
 							<a class="noThumb" href="../../../ppl/1/e/f9c14f0e04e70771b43f81d91e1.html">
-							Mushira Saleem<br>*<br>+...
+							Mushira Manawar<br>*<br>+...
 							</a>
 						</div>
 						<div class="shadow" style="top: 160px; left: 320px;"></div>
@@ -283,7 +404,7 @@ function GoToTop() {
 		<div class="fullclear"></div>
 		<div id="footer">
 			<p id="createdate">
-			Generated by <a href="http://gramps-project.org/">Gramps</a> 5.2.2<br />Last change was the 2024-05-23 09:51:58
+			Generated by <a href="http://gramps-project.org/">Gramps</a> 5.2.2<br />Last change was the 2024-08-09 16:55:13
 			</p>
 			<p id="copyright">
 			
