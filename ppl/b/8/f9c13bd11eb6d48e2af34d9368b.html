@@ -39,6 +39,8 @@ function toggleContent(elem, icon) {
 }
 </script>
 
+	<link href="../../../css/lightbox.css" media="screen" rel="stylesheet" type="text/css" />
+	<script src="../../../css/lightbox.js" type="text/javascript"></script>
 </head>
 <body dir="ltr">
 	<div id="outerwrapper">
@@ -95,6 +97,13 @@ function GoToTop() {
 </script>
 
 		<div class="content" id="IndividualDetail">
+			<div class="snapshot">
+				<div class="thumbnail">
+					<a href="../../../img/0/3/fc4ebbb268b3841a79598a09b30.html" title="Syed Muhammad Quaseem (Left) and Quaid-e-Azam (Right)">
+						<img alt="Syed Muhammad Quaseem (Left) and Quaid-e-Azam (Right)" src="../../../thumb/0/3/fc4ebbb268b3841a79598a09b3015,22-38,38.png" />
+					</a>
+				</div>
+			</div>
 			<h3>Syed Muhammad Quaseem<sup><small></small></sup></h3>
 			<div id="summaryarea">
 				<table class="infolist">
@@ -133,7 +142,7 @@ function GoToTop() {
 					<tbody>
 						<tr>
 							<td class="ColumnAttribute">Father</td>
-							<td class="ColumnValue" /><a href="../../../ppl/0/b/f9c1429475b5a8cd67c267b9bb0.html">Sheikh Abdul Aziz</a><td class="ColumnDate" /><td class="ColumnDate" />
+							<td class="ColumnValue" /><a href="../../../ppl/0/b/f9c1429475b5a8cd67c267b9bb0.html">Sheikh Abdul Aziz</a><td class="ColumnDate" />1 Jan 1819<td class="ColumnDate" />1 Jan 1940
 						</tr>
 						<tr>
 							<td class="ColumnAttribute">&nbsp;&nbsp;&nbsp;&nbsp;Brother</td>
@@ -159,8 +168,8 @@ function GoToTop() {
 						<tr>
 							<td class="ColumnAttribute">&nbsp;&nbsp;&nbsp;&nbsp;Brother</td>
 							<td class="ColumnValue">&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../ppl/0/2/f9be73620aa19733f35acbe7b20.html">Syed Muhammad Nasim</a></td>
-							<td class="ColumnDate"></td>
-							<td class="ColumnDate"></td>
+							<td class="ColumnDate">1 Jan 1900</td>
+							<td class="ColumnDate">26 Oct 1964</td>
 							<td class="ColumnValue"></td>
 						</tr>
 						<tr>
@@ -244,6 +253,46 @@ function GoToTop() {
 					</tr>
 				</table>
 			</div>
+			<div class="subsection" id="indivgallery">
+				<h4 onclick="toggleContent('toggle_media', 'icon_media');">
+					<button class="icon" id="icon_media">
+						<svg class="triangle" viewBox="0 0 100 100">
+							<polygon points="5.9,88.2 50,11.8 94.1,88.2">
+							</polygon>
+						</svg>
+					</button>
+				Media
+				</h4>
+				<div id="toggle_media" style="display:none">
+					<div class="MediaRow">
+						<div class="MediaColumn ltr">
+							<img class="hover-shadow" onclick="openModal();currentSlide(1)" src="../../../thumb/0/3/fc4ebbb268b3841a79598a09b30.png" />
+						</div>
+					</div>
+					<div class="ModalClass" id="MediaModal">
+						<span class="MediaClose MediaCursor" onclick="closeModal()">&times;</span>
+						<div class="ModalContent">
+							<a class="MediaPrev" onclick="plusSlides(-1)">
+							&#10094;
+							</a>
+							<a class="MediaNext" onclick="plusSlides(1)">
+							&#10095;
+							</a>
+							<div class="MediaSlide">
+								<div class="MediaNumber">
+								1/1 - Syed Muhammad Quaseem (Left) and Quaid-e-Azam (Right)
+								</div>
+								<a href="../../../img/0/3/fc4ebbb268b3841a79598a09b30.html">
+									<img src="../../../images/0/3/fc4ebbb268b3841a79598a09b30.jpg" style="width:100%" />
+								</a>
+							</div>
+						</div>
+					</div>
+					<div id="medias">
+					</div>
+				</div>
+				<div class="fullclear"></div>
+			</div>
 			<div class="subsection" id="pedigree">
 				<h4 onclick="toggleContent('toggle_pedigree', 'icon_pedigree');">
 					<button class="icon" id="icon_pedigree">
@@ -258,9 +307,6 @@ function GoToTop() {
 					<li>
 						<a href="../../../ppl/0/b/f9c1429475b5a8cd67c267b9bb0.html">Sheikh Abdul Aziz</a>
 						<ol>
-							<li>
-								<a href="../../../ppl/0/2/f9be73620aa19733f35acbe7b20.html">Syed Muhammad Nasim</a>
-							</li>
 							<li>
 								<a href="../../../ppl/1/e/f9c13af8a516068e9cc052d6ae1.html">Syed Muhammad Saleem</a>
 							</li>
@@ -310,6 +356,9 @@ function GoToTop() {
 							<li>
 								<a href="../../../ppl/d/8/f9c3ef2151648e7771de884028d.html">Tayyaba Bint Abdul Aziz</a>
 							</li>
+							<li>
+								<a href="../../../ppl/0/2/f9be73620aa19733f35acbe7b20.html">Syed Muhammad Nasim</a>
+							</li>
 						</ol>
 					</li>
 				</ol>
@@ -325,10 +374,19 @@ function GoToTop() {
 				Ancestors
 				</h4>
 				<div class="tree" id="toggle_anc" style="display:none">
-					<div id="treeContainer" style="width:624px; height:150px; top: 0px">
+					<div id="treeContainer" style="width:934px; height:150px; top: 0px">
 						<div class="boxbg male AncCol0" style="top: 5px; left: 6px;">
-							<a class="noThumb" href="../../../ppl/b/8/f9c13bd11eb6d48e2af34d9368b.html">
-							Syed Muhammad Quaseem<br>*<br>+...
+							<a class="thumbnail" href="../../../ppl/b/8/f9c13bd11eb6d48e2af34d9368b.html">
+								<table class="table">
+									<tr>
+										<td class="img">
+											<img alt="Img: Syed Muhammad Quaseem" src="../../../thumb/0/3/fc4ebbb268b3841a79598a09b3015,22-38,38.png" />
+										</td>
+										<td class="name">
+										Syed Muhammad Quaseem<br>*<br>+...
+										</td>
+									</tr>
+								</table>
 							</a>
 						</div>
 						<div class="shadow" style="top: 10px; left: 10px;"></div>
@@ -336,13 +394,25 @@ function GoToTop() {
 						<div class="gvline" style="top: 30px; left: 285px; width: 20px"></div>
 						<div class="boxbg male AncCol1" style="top: 5px; left: 316px;">
 							<a class="noThumb" href="../../../ppl/0/b/f9c1429475b5a8cd67c267b9bb0.html">
-							Sheikh Abdul Aziz<br>*<br>+...
+							Sheikh Abdul Aziz<br>*1 Jan 1819<br>+1 Jan 1940
 							</a>
 						</div>
 						<div class="shadow" style="top: 10px; left: 320px;"></div>
 						<div class="bvline" style="top: 25px; left: 300px; width: 15px;"></div>
 					
 						<div class="bhline" style="top: 25px; left: 300px; height: 1px;"></div>
+					
+						<div class="bvline" style="top: 25px; left: 595px; width: 15px"></div>
+						<div class="gvline" style="top: 30px; left: 595px; width: 20px"></div>
+						<div class="boxbg male AncCol2" style="top: 5px; left: 626px;">
+							<a class="noThumb" href="../../../ppl/a/6/fc4ecdc744c3284858bd64b366a.html">
+							Abu Abdul Aziz<br>*<br>+...
+							</a>
+						</div>
+						<div class="shadow" style="top: 10px; left: 630px;"></div>
+						<div class="bvline" style="top: 25px; left: 610px; width: 15px;"></div>
+					
+						<div class="bhline" style="top: 25px; left: 610px; height: 1px;"></div>
 					
 					</div>
 				</div>
@@ -351,7 +421,7 @@ function GoToTop() {
 		<div class="fullclear"></div>
 		<div id="footer">
 			<p id="createdate">
-			Generated by <a href="http://gramps-project.org/">Gramps</a> 5.2.2<br />Last change was the 2024-05-22 10:53:55
+			Generated by <a href="http://gramps-project.org/">Gramps</a> 5.2.2<br />Last change was the 2024-12-10 15:26:41
 			</p>
 			<p id="copyright">
 			

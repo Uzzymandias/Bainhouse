@@ -108,6 +108,126 @@ function GoToTop() {
 						<td class="ColumnAttribute">Gender</td>
 						<td class="ColumnValue">male</td>
 					</tr>
+					<tr>
+						<td class="ColumnAttribute">Age at Death</td>
+						<td class="ColumnValue">greater than 110 years</td>
+					</tr>
+					<tr>
+						<td class="ColumnAttribute">Birth date</td>
+						<td class="ColumnValue">1 Jan 1819 (Bihar Sharif)</td>
+					</tr>
+					<tr>
+						<td class="ColumnAttribute">Death date</td>
+						<td class="ColumnValue">1 Jan 1940 (Bihar Sharif)</td>
+					</tr>
+				</table>
+			</div>
+			<div class="subsection" id="events">
+				<h4 onclick="toggleContent('toggle_event', 'icon_event');">
+					<button class="icon" id="icon_event">
+						<svg class="triangle" viewBox="0 0 100 100">
+							<polygon points="5.9,88.2 50,11.8 94.1,88.2">
+							</polygon>
+						</svg>
+					</button>
+				Events
+				</h4>
+				<table class="infolist eventlist toggle_event ltr" id="toggle_event" style="display:none">
+					<thead>
+						<tr>
+							<th class="ColumnEvent">Event</th>
+							<th class="ColumnDate">Date</th>
+							<th class="ColumnPlace">Place</th>
+							<th class="ColumnDescription">Description</th>
+							<th class="ColumnSources">Sources</th>
+							</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="ColumnEvent" rowspan="2">
+							Birth
+							</td>
+							<td class="ColumnDate">1 Jan 1819</td>
+							<td class="ColumnPlace">
+								<a href="../../../plc/f/3/fabeec9952f7677a3d5b5ba123f.html" title="Bihar Sharif">
+								Bihar Sharif
+								</a>
+							</td>
+							<td class="ColumnDescription">&nbsp;</td>
+							<td class="ColumnSources" rowspan="2">
+							&nbsp;
+							</td>
+							<tr>
+								<td class="ColumnNotes" colspan="3">
+									<div>
+									</div>
+								</td>
+							</tr>
+						</tr>
+						<tr>
+							<td class="ColumnEvent" rowspan="2">
+							Death
+							</td>
+							<td class="ColumnDate">1 Jan 1940</td>
+							<td class="ColumnPlace">
+								<a href="../../../plc/f/3/fabeec9952f7677a3d5b5ba123f.html" title="Bihar Sharif">
+								Bihar Sharif
+								</a>
+							</td>
+							<td class="ColumnDescription">&nbsp;</td>
+							<td class="ColumnSources" rowspan="2">
+							&nbsp;
+							</td>
+							<tr>
+								<td class="ColumnNotes" colspan="3">
+									<div>
+									</div>
+								</td>
+							</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="subsection" id="parents">
+				<h4 onclick="toggleContent('toggle_parent', 'icon_parent');">
+					<button class="icon" id="icon_parent">
+						<svg class="triangle" viewBox="0 0 100 100">
+							<polygon points="5.9,88.2 50,11.8 94.1,88.2">
+							</polygon>
+						</svg>
+					</button>
+				Parents
+				</h4>
+				<table class="infolist toggle_parent ltr" id="toggle_parent" style="display:none">
+					<thead>
+						<tr>
+							<th class="ColumnAttribute">Relation to main person</th>
+							<th class="ColumnValue">Name</th>
+							<th class="ColumnValue">Birth date</th>
+							<th class="ColumnValue">Death date</th>
+							<th class="ColumnValue">Relation within this family (if not by birth)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="ColumnAttribute">Father</td>
+							<td class="ColumnValue" /><a href="../../../ppl/a/6/fc4ecdc744c3284858bd64b366a.html">Abu Abdul Aziz</a><td class="ColumnDate" /><td class="ColumnDate" />
+						</tr>
+						<tr>
+							<td class="ColumnAttribute">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+							<td class="ColumnValue">&nbsp;&nbsp;&nbsp;&nbsp;<b>Sheikh Abdul Aziz</b></td>
+							<td class="ColumnDate">1 Jan 1819</td>
+							<td class="ColumnDate">1 Jan 1940</td>
+							<td class="ColumnValue"></td>
+						</tr>
+						<tr>
+							<td class="ColumnAttribute">&nbsp;&nbsp;&nbsp;&nbsp;Sister</td>
+							<td class="ColumnValue">&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../ppl/7/0/fc4ecb745ae298f6976fffb3807.html">Maimuna Khatoon</a></td>
+							<td class="ColumnDate"></td>
+							<td class="ColumnDate"></td>
+							<td class="ColumnValue"></td>
+						</tr>
+					</tbody>
 				</table>
 			</div>
 			<div class="subsection" id="families">
@@ -136,7 +256,6 @@ function GoToTop() {
 								</tr>
 							</thead>
 							<tbody>
-								<tr><td /><a href="../../../ppl/0/2/f9be73620aa19733f35acbe7b20.html">Syed Muhammad Nasim</a><td></td><td></td></tr>
 								<tr><td /><a href="../../../ppl/1/e/f9c13af8a516068e9cc052d6ae1.html">Syed Muhammad Saleem</a><td></td><td></td></tr>
 								<tr><td /><a href="../../../ppl/b/8/f9c13bd11eb6d48e2af34d9368b.html">Syed Muhammad Quaseem</a><td></td><td></td></tr>
 								<tr><td /><a href="../../../ppl/1/9/f9c13c182921ca8a4e10852ba91.html">Syed Muhammad Kaleem</a><td></td><td></td></tr>
@@ -144,10 +263,25 @@ function GoToTop() {
 								<tr><td /><a href="../../../ppl/3/9/f9c3eefe54839be61e3d502af93.html">Sabiha Khan Bint Abdul Aziz</a><td></td><td></td></tr>
 								<tr><td /><a href="../../../ppl/a/7/f9c3ef0f724c7ef4061d4a627a.html">Siddiqa Bint Abdul Aziz</a><td></td><td></td></tr>
 								<tr><td /><a href="../../../ppl/d/8/f9c3ef2151648e7771de884028d.html">Tayyaba Bint Abdul Aziz</a><td></td><td></td></tr>
+								<tr><td /><a href="../../../ppl/0/2/f9be73620aa19733f35acbe7b20.html">Syed Muhammad Nasim</a><td>1 Jan 1900</td><td>26 Oct 1964</td></tr>
 							</tbody>
 						</table>
 					</tr>
 				</table>
+			</div>
+			<div class="subsection" id="familymap">
+				<h4 onclick="toggleContent('toggle_map', 'icon_map');">
+					<button class="icon" id="icon_map">
+						<svg class="triangle" viewBox="0 0 100 100">
+							<polygon points="5.9,88.2 50,11.8 94.1,88.2">
+							</polygon>
+						</svg>
+					</button>
+				Family Map
+				</h4>
+				<div id="toggle_map" style="display:none">
+					<a class="familymap" href="../../../maps/0/b/f9c1429475b5a8cd67c267b9bb0.html" title="Family Map">Family Map</a>
+				</div>
 			</div>
 			<div class="subsection" id="pedigree">
 				<h4 onclick="toggleContent('toggle_pedigree', 'icon_pedigree');">
@@ -161,7 +295,11 @@ function GoToTop() {
 				</h4>
 				<ol class="pedigreegen" id="toggle_pedigree" style="display:none">
 					<li>
+						<a href="../../../ppl/a/6/fc4ecdc744c3284858bd64b366a.html">Abu Abdul Aziz</a>
 						<ol>
+							<li>
+								<a href="../../../ppl/7/0/fc4ecb745ae298f6976fffb3807.html">Maimuna Khatoon</a>
+							</li>
 							<li class="thisperson">
 							Sheikh Abdul Aziz
 								<ol class="spouselist">
@@ -199,11 +337,44 @@ function GoToTop() {
 					</li>
 				</ol>
 			</div>
+			<div class="subsection" id="tree">
+				<h4 onclick="toggleContent('toggle_anc', 'icon_anc');">
+					<button class="icon" id="icon_anc">
+						<svg class="triangle" viewBox="0 0 100 100">
+							<polygon points="5.9,88.2 50,11.8 94.1,88.2">
+							</polygon>
+						</svg>
+					</button>
+				Ancestors
+				</h4>
+				<div class="tree" id="toggle_anc" style="display:none">
+					<div id="treeContainer" style="width:624px; height:150px; top: 0px">
+						<div class="boxbg male AncCol0" style="top: 5px; left: 6px;">
+							<a class="noThumb" href="../../../ppl/0/b/f9c1429475b5a8cd67c267b9bb0.html">
+							Sheikh Abdul Aziz<br>*1 Jan 1819<br>+1 Jan 1940
+							</a>
+						</div>
+						<div class="shadow" style="top: 10px; left: 10px;"></div>
+						<div class="bvline" style="top: 25px; left: 285px; width: 15px"></div>
+						<div class="gvline" style="top: 30px; left: 285px; width: 20px"></div>
+						<div class="boxbg male AncCol1" style="top: 5px; left: 316px;">
+							<a class="noThumb" href="../../../ppl/a/6/fc4ecdc744c3284858bd64b366a.html">
+							Abu Abdul Aziz<br>*<br>+...
+							</a>
+						</div>
+						<div class="shadow" style="top: 10px; left: 320px;"></div>
+						<div class="bvline" style="top: 25px; left: 300px; width: 15px;"></div>
+					
+						<div class="bhline" style="top: 25px; left: 300px; height: 1px;"></div>
+					
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="fullclear"></div>
 		<div id="footer">
 			<p id="createdate">
-			Generated by <a href="http://gramps-project.org/">Gramps</a> 5.2.2<br />Last change was the 2024-05-21 15:47:49
+			Generated by <a href="http://gramps-project.org/">Gramps</a> 5.2.2<br />Last change was the 2024-12-10 15:56:40
 			</p>
 			<p id="copyright">
 			
